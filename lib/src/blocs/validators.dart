@@ -7,7 +7,7 @@ class Validators {
       if(email.contains('@')) {
         sink.add(email);
       } else {
-        sink.addError('Enter a valid email address')
+        sink.addError('Enter a valid email address');
       }
     }
   );
@@ -17,7 +17,7 @@ class Validators {
       if(password.length >= 6) {
         sink.add(password);
       } else {
-        sink.addError('Password must be atleast 6 characters long')
+        sink.addError('Password must be atleast 6 characters long');
       }
     }
   );
