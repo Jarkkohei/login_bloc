@@ -50,9 +50,7 @@ class LoginScreen extends StatelessWidget {
         return RaisedButton(
           color: Colors.blue,
           textColor: Colors.white,
-          onPressed: snapshot.hasData ? () {
-            print('Hi There');
-          } : null,
+          onPressed: snapshot.hasData ? bloc.submit : null,
           child: Text('Login'),
         );
       },
